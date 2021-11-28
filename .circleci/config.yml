@@ -6,7 +6,7 @@ jobs:
   test_backend:
     docker:
       # dockerイメージで使っているrubyバージョンと一致させる
-      - image: circleci/ruby:2.7.1-alpine
+      - image: circleci/ruby:2.7.1
         environment:
           RAILS_ENV: test
           DB_HOST: 127.0.0.1
