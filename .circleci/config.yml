@@ -1,5 +1,3 @@
-
-
 version: 2.1
 
 jobs:
@@ -21,13 +19,6 @@ jobs:
 
     steps:
       - checkout
-
-      # restore gem from cache
-      - restore_cache:
-          keys:
-            - gem-cache-v1-{{ checksum "~/repo/Gemfile.lock" }}
-            - gem-cache-v1-
-          working_directory: ~/repo
 
       # gem install
       - run:
