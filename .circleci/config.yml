@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout
 
-      # gem install
+      # gem install 
       - run:
           command: |
             gem install bundler
