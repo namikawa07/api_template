@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout
 
-      # gem install 
+      # gem install
       - run:
           command: |
             gem install bundler
@@ -36,7 +36,7 @@ jobs:
 
       # Database setup
       - run:
-          command: bundle exec rails db:create
+          command: docker~compose run -rm bundle exec rails db:create
           working_directory: ~/repo
       - run:
           command: bundle exec rails db:migrate
