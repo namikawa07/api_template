@@ -36,7 +36,7 @@ jobs:
 
       # Database setup
       - run:
-          command: docker~compose run -rm bundle exec rails db:create
+          command: docker-compose run -rm bundle exec rails db:create
           working_directory: ~/repo
       - run:
           command: bundle exec rails db:migrate
