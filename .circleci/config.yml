@@ -11,7 +11,7 @@ jobs:
           DB_PASSWORD: ""
       - image: circleci/postgres:12.3
         environment:
-          POSTGRES_USER: root
+          POSTGRES_USER: postgres
           POSTGRES_DB: circleci_testdb
           POSTGRES_HOST_AUTH_METHOD: trust # パスワードなし
 
