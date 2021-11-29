@@ -36,10 +36,10 @@ jobs:
 
       # Database setup
       - run:
-          command: bundle exec rails db:create
+          command: bundle exec rails db:create RAILS_ENV=test
           working_directory: ~/repo
       - run:
-          command: bundle exec rails db:migrate
+          command: bundle exec rails db:migrate RAILS_ENV=test
           working_directory: ~/repo
 
       - run:
